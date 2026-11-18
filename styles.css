@@ -1,0 +1,86 @@
+/* Tehila landing — soft sage paper, warm cream, rose & lilac accents.
+   Deliberately distinct from Shinena's deep-green game/journey look. */
+:root{
+  --paper:#fbf7f2; --paper2:#f3eadf; --card:#fffdfb; --ink:#4a3f36; --muted:#85776b;
+  --sage:#7f9b72; --sage-d:#4f6b46; --rose:#d98ba6; --lilac:#a98bc4; --gold:#d9a441;
+  --line:#e6d9cc; --radius:26px; --shadow:0 10px 34px #6b523419;
+  --font:"Heebo",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font);font-weight:500;font-size:18px;line-height:1.7;background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--sage-d);text-decoration:none}
+h1,h2,h3{margin:0;line-height:1.2;color:var(--sage-d);font-weight:900}
+h1{font-size:clamp(34px,5vw,58px);letter-spacing:-1px}
+h2{font-size:clamp(28px,4vw,42px);text-align:center;margin-bottom:14px}
+h3{font-size:20px}
+p{margin:0}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+.narrow{width:min(840px,100% - 40px)}
+.center{text-align:center}
+.section{padding:78px 0}
+.soft-section{background:linear-gradient(180deg,#fff, #faf1ea)}
+
+.site-header{position:sticky;top:0;z-index:20;background:#fbf7f2e8;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.header-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-ico{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid var(--rose)}
+.brand-txt strong{display:block;font-size:24px;color:var(--sage-d);font-weight:900}
+.brand-txt small{display:block;font-size:11px;color:var(--muted)}
+.topnav{display:flex;gap:22px}
+.topnav a{font-weight:700;font-size:15px;color:var(--ink)}
+.topnav a:hover{color:var(--rose)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;font-weight:800;cursor:pointer;border:none;font-size:16px;padding:12px 24px;transition:transform .15s, box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-sm{padding:9px 18px;font-size:14px}
+.btn-big{padding:16px 32px;font-size:18px}
+.btn-main{background:linear-gradient(135deg,var(--rose),var(--lilac));color:#fff;box-shadow:0 8px 20px #d98ba655}
+.btn-ghost{background:transparent;border:2px solid var(--line);color:var(--sage-d)}
+
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 80% 20%,#f7dfe9 0,transparent 45%),radial-gradient(circle at 10% 80%,#e7f0df 0,transparent 45%)}
+.hero-row{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:60px 0}
+.kicker{display:inline-block;font-size:14px;font-weight:800;color:var(--rose);margin-bottom:14px}
+.hero-copy p{max-width:560px;font-size:19px;color:var(--muted);margin:18px 0}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.soft{font-size:13px;color:var(--muted);margin-top:16px}
+.hero-art{position:relative;display:flex;justify-content:center}
+.mascot{width:min(420px,80%);filter:drop-shadow(0 18px 24px #6b523425)}
+.sparkle{position:absolute;font-size:28px;animation:float 4s ease-in-out infinite}
+.s1{top:8%;left:12%}.s2{top:40%;right:6%;animation-delay:1s}.s3{bottom:12%;left:18%;animation-delay:2s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;box-shadow:var(--shadow)}
+.step .num{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#f7dfe9;color:var(--rose);font-weight:900;margin-bottom:14px}
+.step p{color:var(--muted);font-size:15px;margin-top:8px}
+
+.why-row{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.board{border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line)}
+.why-copy h2{text-align:right}
+.why-copy p{color:var(--muted);margin:16px 0}
+.ticks{list-style:none;padding:0;margin:18px 0}
+.ticks li{padding:8px 0;font-weight:700}
+.cta{background:radial-gradient(circle at 50% 0,#f7dfe9 0,transparent 55%)}
+.cta-mascot{width:130px;margin:0 auto 14px}
+.cta p{color:var(--muted);margin:12px 0 26px}
+
+.site-footer{border-top:1px solid var(--line);padding:28px 0;background:#fffdfb}
+.footer-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.foot-brand{font-weight:900;color:var(--sage-d);font-size:20px}
+.site-footer nav{display:flex;gap:18px}
+.site-footer a{font-size:14px;font-weight:700}
+
+.petals{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:radial-gradient(#e7b9cd 1.5px,transparent 1.6px),radial-gradient(#c9dcbe 1.5px,transparent 1.6px);
+  background-size:120px 120px,170px 170px;background-position:0 0,60px 80px}
+body>*{position:relative;z-index:1}
+
+@media(max-width:820px){
+  .topnav{display:none}
+  .hero-row,.why-row{grid-template-columns:1fr}
+  .hero-art{order:-1}
+  .mascot{width:240px}
+  .steps{grid-template-columns:1fr}
+}
