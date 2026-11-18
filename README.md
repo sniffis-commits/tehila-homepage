@@ -19,3 +19,12 @@ host) and point the domain at it.
 
 Edit `config.js` `APP_URL` to the deployed frontend (default:
 `https://tehila1.vercel.app`).
+
+## Store assets & promo video
+
+- `store-assets/` — final Play Store graphics: `google-play-icon-512.png`,
+  `app-icon-1024.png`, `feature-graphic-1024x500.png`, `screenshot-01..03-1080x1920.png`,
+  plus the adaptive-icon foreground/background layers. Use these for the Play listing.
+- `assets/video/tehila-promo.mp4` — 20s landscape promo with Tehila's voice, used on
+  the homepage (added via patch). `tehila-promo-he.vtt` is the Hebrew caption track;
+  `tehila-promo-poster.jpg` the poster. The vertical cut is also included for social.
