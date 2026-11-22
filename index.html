@@ -12,15 +12,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&family=Rubik:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script src="config.js"></script>
+<link rel="stylesheet" href="family-brand.css">
 </head>
 <body>
 <div class="petals" aria-hidden="true"></div>
 <header class="site-header">
   <div class="wrap header-row">
-    <a class="brand" href="#top" aria-label="תהילה - לראש הדף">
+    <div class="family-brand-identity"><a class="brand" href="#top" aria-label="תהילה - לראש הדף">
       <img src="assets/img/logo.webp" width="46" height="46" alt="" class="brand-ico">
       <span class="brand-txt"><strong>תהילה</strong><small>לומדים תהלים בעל פה - ונהנים!</small></span>
     </a>
+<a class="family-brand-link" href="https://bentora-family.vercel.app/">מבית משפחת בן תורה</a></div>
     <nav class="topnav" aria-label="ניווט ראשי">
       <a href="#how">איך זה עובד</a>
       <a href="#why">למה תהלים</a>
@@ -49,6 +51,24 @@
     </div>
   </div>
 </section>
+<section id="ben-torah-family" class="family-brand-area" aria-labelledby="family-brand-title">
+  <div class="wrap family-brand-grid">
+    <div class="family-brand-copy">
+      <span class="family-brand-kicker">משפחה אחת, הרבה דרכים ללמוד</span>
+      <h2 id="family-brand-title">עוד לומדים במשפחת בן תורה</h2>
+      <p>שיננא, תהילה והתאומים הם חלק ממשפחה אחת. כל אח ואחות פותחים דלת לעולם אחר של לימוד, בקול, במשחק ובשמחה.</p>
+      <a class="btn btn-main" href="https://bentora-family.vercel.app/">לכל המשפחה והאפליקציות</a>
+      <div class="family-brand-actions" aria-label="Ben Torah">
+        <a class="family-brand-pill" href="https://shinena.vercel.app/">שיננא</a>
+        <a class="family-brand-pill" href="https://tehila-homepage.vercel.app/">תהילה</a>
+        <a class="family-brand-pill" href="https://teomin-homepage.vercel.app/">מכירים את התאומים</a>
+      </div>
+      <p class="family-brand-upcoming">ובדרך: מוריה, למדני וחיים.</p>
+    </div>
+    <img class="family-brand-photo" src="assets/img/ben-torah-family.jpg" width="1536" height="1024" alt="Ben Torah" loading="lazy" decoding="async">
+  </div>
+</section>
+
 
 <!-- TEHILA PROMO: existing-voice final, 20 seconds -->
 <section id="promo" class="section" aria-labelledby="tehila-promo-title">
@@ -109,6 +129,7 @@
   <div class="wrap footer-row">
     <span class="foot-brand">🌸 תהילה</span>
     <nav>
+<a href="https://bentora-family.vercel.app/">לכל המשפחה והאפליקציות</a>
       <a href="privacy.html">פרטיות</a>
       <a href="delete-account.html">מחיקת חשבון</a>
       <a href="mailto:hello@shinena.app">צור קשר</a>
