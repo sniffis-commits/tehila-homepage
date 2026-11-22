@@ -1,0 +1,13 @@
+/* Shared family area; each product keeps its own palette. */
+.family-brand-link{font-size:12px;font-weight:700;display:block;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.family-brand-area{padding:52px 0;background:var(--paper2);border-block:1px solid var(--line)}
+.family-brand-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:40px}
+.family-brand-copy h2{text-align:start;font-size:clamp(28px,3.4vw,40px);margin:8px 0 14px}
+.family-brand-copy p{max-width:55ch;margin:0 0 20px;color:var(--muted)}
+.family-brand-kicker{font-size:14px;letter-spacing:.04em;font-weight:800;color:var(--muted)}
+.family-brand-photo{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:22px;box-shadow:var(--shadow)}
+.family-brand-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-block:18px}
+.family-brand-pill{display:inline-block;padding:8px 16px;border:1px solid var(--line);border-radius:999px;background:var(--card);font-size:15px;text-decoration:none;font-weight:700}
+.family-brand-copy .family-brand-upcoming{font-size:14px;margin-bottom:0}
+.family-brand-area a:focus-visible,.family-brand-link:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+@media(max-width:700px){.family-brand-grid{grid-template-columns:1fr;gap:24px}.family-brand-area{padding:36px 0}.family-brand-photo{max-height:270px;object-fit:contain}.family-brand-copy h2{font-size:29px}.family-brand-actions{gap:8px}}
